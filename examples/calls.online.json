@@ -1,0 +1,13 @@
+{
+  "engine": "pipeline",
+  "language": "ko",
+  "pipeline": {
+    "stt": {"provider": "openai", "base_url": "https://api.openai.com/v1", "model": "gpt-4o-mini-transcribe", "language": "ko", "key_env": "OPENAI_API_KEY"},
+    "llm": {"provider": "openai", "base_url": "https://api.openai.com/v1", "model": "gpt-4o-mini", "max_tokens": 80, "key_env": "OPENAI_API_KEY"},
+    "tts": {"provider": "openai", "base_url": "https://api.openai.com/v1", "model": "gpt-4o-mini-tts", "voice": "alloy", "key_env": "OPENAI_API_KEY"},
+    "greeting": "안녕하세요. 무엇을 도와드릴까요?",
+    "system_prompt": "전화로 대화하는 한국어 비서입니다. 한 문장의 짧고 자연스러운 존댓말로 답하세요.",
+    "max_input_seconds": 10,
+    "max_output_seconds": 8
+  }
+}

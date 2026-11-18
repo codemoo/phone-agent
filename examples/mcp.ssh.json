@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "android-apps": {
+      "command": "ssh",
+      "args": ["-T", "-o", "BatchMode=yes", "my-phone-host", "/path/to/venv/bin/phone-agent", "apps", "--profile", "default"]
+    }
+  }
+}

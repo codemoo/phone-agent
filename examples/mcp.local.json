@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "android-apps": {
+      "command": "/path/to/venv/bin/phone-agent",
+      "args": ["apps", "--profile", "default"]
+    }
+  }
+}

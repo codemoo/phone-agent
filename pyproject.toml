@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "phone-agent"
+version = "0.1.0"
+description = "Android app control over MCP and a separate cellular voice agent"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+license-files = ["LICENSE", "THIRD_PARTY_NOTICES.md"]
+
+[project.optional-dependencies]
+apps = ["mcp>=1.23,<2", "phone-mcp==0.3.6"]
+calls = ["websockets>=14,<16"]
+local-speech = ["faster-whisper>=1.1,<2"]
+
+[project.scripts]
+phone-agent = "phone_agent.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"phone_agent.call_agent" = ["android/*.java"]

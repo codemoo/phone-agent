@@ -1,0 +1,13 @@
+{
+  "engine": "pipeline",
+  "language": "en",
+  "pipeline": {
+    "stt": {"provider": "faster-whisper", "model": "base.en", "language": "en", "allow_download": true},
+    "llm": {"provider": "openai", "base_url": "http://127.0.0.1:11434/v1", "model": "llama3.2", "max_tokens": 80},
+    "tts": {"provider": "piper", "model": "/path/to/your-en_US-voice.onnx"},
+    "greeting": "Hello. How can I help?",
+    "system_prompt": "You are speaking on the phone. Answer directly in one short sentence.",
+    "max_input_seconds": 10,
+    "max_output_seconds": 8
+  }
+}

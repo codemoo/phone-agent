@@ -1,0 +1,32 @@
+# Local recipes, device records, and pre-packaging work
+/skills/
+/.agents/
+/.codex/
+/artifacts/
+/vendor/
+/server/
+/android/
+/tools/
+/config/
+/tests/
+/PROJECT.txt
+/requirements-eleven-agent.txt
+/requirements-phone-mcp.txt
+*.pcm
+*.wav
+*.aiff
+*.apk
+*.jar
+*.env
+.env.*
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+build/
+dist/
+.DS_Store

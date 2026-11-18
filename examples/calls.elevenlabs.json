@@ -1,0 +1,9 @@
+{
+  "engine": "elevenlabs",
+  "language": "ko",
+  "elevenlabs": {
+    "agent_id": "YOUR_ELEVENLABS_AGENT_ID",
+    "key_env": "ELEVENLABS_API_KEY",
+    "asr": "scribe"
+  }
+}
